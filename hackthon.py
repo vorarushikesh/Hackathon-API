@@ -107,10 +107,6 @@ with open("feature_list.json", "r") as f:
 
 # ---------------- HEADER ----------------
 st.markdown('<div class="title">🩺 AI Diabetes Predictor</div>', unsafe_allow_html=True)
-st.markdown(
-    '<div class="subtitle">Advanced Machine Learning Health Risk Analysis System</div>',
-    unsafe_allow_html=True
-)
 
 # ---------------- LAYOUT ----------------
 left, right = st.columns([2,1])
@@ -129,26 +125,26 @@ with left:
         genhlth = st.slider("General Health", 1, 5, 2)
 
     with c2:
-        highbp = st.selectbox("High BP", [0,1])
-        highchol = st.selectbox("High Cholesterol", [0,1])
-        smoker = st.selectbox("Smoker", [0,1])
+        highbp = st.selectbox("High BP", ["No","Yes"])
+        highchol = st.selectbox("High Cholesterol", ["No","Yes"])
+        smoker = st.selectbox("Smoker", ["No","Yes"])
 
     with c3:
-        physactivity = st.selectbox("Physical Activity", [0,1])
-        fruits = st.selectbox("Eat Fruits", [0,1])
-        veggies = st.selectbox("Eat Veggies", [0,1])
+        physactivity = st.selectbox("Physical Activity", ["No","Yes"])
+        fruits = st.selectbox("Eat Fruits", ["No","Yes"])
+        veggies = st.selectbox("Eat Veggies", ["No","Yes"])
 
     st.subheader("🧠 Additional Information")
 
     c4, c5, c6 = st.columns(3)
 
     with c4:
-        stroke = st.selectbox("Stroke", [0,1])
-        heart = st.selectbox("Heart Disease", [0,1])
-        diffwalk = st.selectbox("Difficulty Walking", [0,1])
+        stroke = st.selectbox("Stroke", ["No","Yes"])
+        heart = st.selectbox("Heart Disease", ["No","Yes"])
+        diffwalk = st.selectbox("Difficulty Walking", ["No","Yes"])
 
     with c5:
-        sex = st.selectbox("Sex (0 Female / 1 Male)", [0,1])
+        sex = st.selectbox("Sex (0 Female / 1 Male)", ["No","Yes"])
         education = st.slider("Education", 1, 6, 4)
         income = st.slider("Income", 1, 8, 5)
 
