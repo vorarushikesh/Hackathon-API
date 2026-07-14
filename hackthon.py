@@ -266,11 +266,3 @@ with right:
 
 # ---------------- FOOTER ----------------
 st.markdown("<br><br>", unsafe_allow_html=True)
-
-st.markdown("""
-<center>
-<p style='color:gray'>
-Built with ❤️ using Streamlit + XGBoost
-</p>
-</center>
-""", unsafe_allow_html=True)
