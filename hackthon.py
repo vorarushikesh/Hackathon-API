@@ -125,33 +125,33 @@ with left:
         genhlth = st.slider("General Health", 1, 5, 2)
 
     with c2:
-        highbp = st.selectbox("High BP", ["No","Yes"])
-        highchol = st.selectbox("High Cholesterol", ["No","Yes"])
-        smoker = st.selectbox("Smoker", ["No","Yes"])
+        highbp = st.selectbox("High BP (0 No / 1 yes)", [0,1])
+        highchol = st.selectbox("High Cholesterol (0 No / 1 yes)", [0,1])
+        smoker = st.selectbox("Smoker (0 No / 1 yes)", [0,1])
 
     with c3:
-        physactivity = st.selectbox("Physical Activity", ["No","Yes"])
-        fruits = st.selectbox("Eat Fruits", ["No","Yes"])
-        veggies = st.selectbox("Eat Veggies", ["No","Yes"])
+        physactivity = st.selectbox("Physical Activity (0 No / 1 yes)", [0,1])
+        fruits = st.selectbox("Eat Fruits (0 No / 1 yes)", [0,1])
+        veggies = st.selectbox("Eat Veggies (0 No / 1 yes)", [0,1])
 
     st.subheader("🧠 Additional Information")
 
     c4, c5, c6 = st.columns(3)
 
     with c4:
-        stroke = st.selectbox("Stroke", ["No","Yes"])
-        heart = st.selectbox("Heart Disease", ["No","Yes"])
-        diffwalk = st.selectbox("Difficulty Walking", ["No","Yes"])
+        stroke = st.selectbox("Stroke (0 No / 1 yes)", [0,1])
+        heart = st.selectbox("Heart Disease (0 No / 1 yes)", [0,1])
+        diffwalk = st.selectbox("Difficulty Walking (0 No / 1 yes)", [0,1])
 
     with c5:
-        sex = st.selectbox("Sex (0 Female / 1 Male)", ["No","Yes"])
+        sex = st.selectbox("Sex (0 Female / 1 Male)", [0, 1])
         education = st.slider("Education", 1, 6, 4)
         income = st.slider("Income", 1, 8, 5)
 
     with c6:
         menthlth = st.slider("Mental Health Days", 0, 30, 0)
         physhlth = st.slider("Physical Health Days", 0, 30, 0)
-        nodoc = st.selectbox("No Doctor Due Cost", [0,1])
+        nodoc = st.selectbox("No Doctor Due Cost (0 No / 1 yes)", [0,1])
 
     st.markdown("</div>", unsafe_allow_html=True)
 
